@@ -27,3 +27,14 @@ if __name__ == '__main__' :
     rue.text_align = 'center'
     rue.stroke_text(couleur, rue.width/2, rue.height/2)
 
+# Autres tests
+from time import sleep
+affiche(rue)
+for i in range(30) :
+    couleur = couleur_aleatoire()
+    rue.fill_style = couleur
+    rue.fill_rect(0, 0, rue.width, rue.height)
+    rue.font = '48px Lucida Console'
+    rue.text_align = 'center'
+    rue.stroke_text(couleur, rue.width/2, rue.height/2)
+    sleep(1)
