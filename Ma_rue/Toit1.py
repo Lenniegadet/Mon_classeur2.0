@@ -12,21 +12,22 @@ def toit1(x, niveau):
         x : abcisse du centre du toit
         niveau : numero du niveau (0 pour les rdc, ...)
     '''
-    y = rue.height - 160 * 60
-     # ordonnée de la base du toit
+    y = rue.height - niveau * 60 # ordonnée de la base du toit
+    rue.begin_path()
+    rue.fill_style = 'black'
+    rue.move_to(x-74,y)
+    rue.line_to(x,y-40)
+    rue.line_to(x+74,y)
+    rue.close_path()
+    rue.fill()
     
-    ctx.beginPath();
-ctx.moveTo(x,-80);
-ctx.lineTo(x, 40);
-ctx.lineTo(250, 140);
-ctx.closePath();
-ctx.stroke();
+
 
 # Tests
-affiche(rue)
-toit1(rue.width/2, 0)
-
-# Autres tests
-for i in range(5) :
-    for j in range(1, 6) :
-        toit1(0 + 200 * i, j)
+if __name__ == '__main__' :
+    affiche(rue)
+    toit1(rue.width/2, 0)
+    # Autres tests
+    for i in range(5) :
+        for j in range(1, 6) :
+            toit1(0 + 200 * i, j)
