@@ -1,7 +1,6 @@
-# Dépendances
 from Ma_rue import rue, affiche
 from Rectangle import rectangle
-from Trait import trait 
+from Trait import trait
 
 # Définitions
 
@@ -16,11 +15,17 @@ def balcon(x,y):
         y est l'ordonnée du sol du niveau de la porte-fenetre
     '''
     # porte-fenetre
-    
+    rectangle(x, y, 30, 50, "Azure")
     
     
     # balcon
-
+    rue.line_width = 3
+    rue.stroke_rect(x-20, y, 40, -25)
+    for i in range(8):
+        trait(x-20+5*i, y, x-20+5*i, y-25)
+    rue.line_width = 1
+    
 # Tests
-affiche(rue)
-balcon(rue.width/2,rue.height)
+if __name__ == '__main__':
+    affiche(rue)
+    balcon(rue.width/2,rue.height)

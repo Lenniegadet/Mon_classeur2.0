@@ -15,13 +15,12 @@ def facade(x, couleur, niveau):
         niveau : numéro du niveau (0 pour les rdc, ...)
     '''
     y = rue.height - niveau * 60 # ordonnée de la base de la facade
-    rectangle(x,y,140,60,couleur)
+    rectangle(x, y, 140, 60, couleur)
     
 # Tests
-if __name__ == '__main__' :
+if __name__ == '__main__':
     from Couleur import couleur_aleatoire
     affiche(rue)
     couleur = couleur_aleatoire()
     for n in range(6) :
         facade(rue.width/2, couleur, n)
-# Autres tests
