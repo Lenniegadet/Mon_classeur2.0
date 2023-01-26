@@ -12,10 +12,10 @@ def couleur_aleatoire():
     compris entre 0 et 255 choisis aléatoirement.
     
     '''
-    couleur=f"rgb({randint(0,255)},{randint(0,255)},{randint(0,255)})"
+    return f"rgb({randint(0,255)},{randint(0,255)},{randint(0,255)})"
     
     
-    return couleur
+
 
 # Tests
 if __name__ == '__main__' :

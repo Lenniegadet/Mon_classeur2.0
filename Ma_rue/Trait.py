@@ -16,7 +16,7 @@ if __name__ == '__main__' :
     affiche(rue)
     trait(50, 25, rue.width/2, rue.height/2)
 
-# Autres tests
-for x in range (int(rue.width/2), rue.width + 1, 20) :
-    trait(x, 0, 3*rue.width/2 - x, rue.height)
+    # Autres tests
+    for x in range (int(rue.width/2), rue.width + 1, 20) :
+        trait(x, 0, 3*rue.width/2 - x, rue.height)
 
