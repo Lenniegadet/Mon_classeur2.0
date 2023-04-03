@@ -6,7 +6,7 @@
 
 - Un OS est un est un logiciel qui, dans un appareil électronique, pilote les dispositifs matériels et reçoit des instructions de l'utilisateur ou d'autres logiciels. Il gère le ou les processeurs ainsi que la mémoire, fait fonctionner les périphériques (clavier, souris, écran,...).
 
-- Le premier OS a été crée en 1951.
+- Le premier OS a été crée en 1960.
 
 - Linux est un clonne d'Unix en version libre, il est donc son équivalent. Linux fait référance aux noyaux d'un OS tandis que Unix fait référance au système d'exploitation d'origine.
 
